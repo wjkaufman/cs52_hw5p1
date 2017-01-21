@@ -1,8 +1,6 @@
 import Post from '../models/post_model';
 
 export const createPost = (req, res) => {
-	res.send('post should be created here');
-	console.log(req);
 	const post = new Post();
 	post.title = req.body.title;
 	
